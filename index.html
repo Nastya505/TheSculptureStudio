@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+	<meta name="generator" content="Geany 1.37.1" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!---3D-->
+    <script src="https://unpkg.com/@webcomponents/webcomponentsjs@2.1.3/webcomponents-loader.js"></script> 
+	<!--FONSAWESOME-->
+	<script src="https://kit.fontawesome.com/f13d515fed.js" crossorigin="anonymous"></script>
+	<!--CSS-->
+	<link href="./css/style.css" rel="stylesheet">
+	<script src="./js/script.js" defer></script>
+	<title>The Sculpture Studio</title>
+</head>
+
+<body>
+<!--HEADER-->
+<div class="container">
+	<header class="header">
+		<div class="logo">
+			<img class="logo__icon" src="./img/icon.svg" />
+			<div class="logo__title">The Sculpture Studio</div>
+		</div>
+		<!--NAV-->
+		<ul class="nav">
+			<li><a class="nav__link" href="#main">Главная</a></li>
+			<li><a class="nav__link" href="#company">Компания</a></li>
+			<li><a class="nav__link" href="#projects">Портфолио</a></li>
+			<li><a class="nav__link" href="#form">Заказать</a></li>
+		</ul>
+		<div class="burder-menu">
+            <span></span>
+        </div>
+	</header>
+</div>
+
+<div class="container">
+	<!---MAIN-->
+	<main class="main" id="main">
+		<div class="main-content">
+			<div class="main-content__title">Создание уникальных
+				скульптур на заказ</div>
+			<div class="main-content__subtitle">вечные шедевры, которые запомнятся навсегда</div>
+		</div>
+		<model-viewer class="image3d-top" src="scene.gltf" alt="A 3D model" shadow-intensity="1" camera-controls auto-rotate ar ></model-viewer>
+	</main>
+	<!---COMPANY-->
+	<section class="company" id="company">
+		<div class="section-title">Добро пожаловать в нашу компанию</div>
+		<div class="timeline">
+			<div class="timeline-item left">
+				<img src="./img/Group11.svg" alt="">
+				<div class="timeline-item__text">
+					<p>Мы специализируемся на создании уникальных скульптур на заказ. Мы работаем с различными материалами, такими как: мрамор, бронза, гранит и другие.</p>
+					<span class="left-arrow"></span>
+				</div>
+			</div>
+			<div class="timeline-item right">
+				<img src="./img/Group10.svg" alt="">
+				<div class="timeline-item__text">
+					<p>Процесс создания скульптур начинается с общения нашего художника с клиентом. Мы учитываем все пожелания заказчика и создаем проект, который будет соответствовать всем требованиям.</p>
+					<span class="right-arrow"></span>
+				</div>
+			</div>
+			<div class="timeline-item left">
+				<img src="./img/Group9.svg" alt="">
+				<div class="timeline-item__text">
+					<p> Мы создаем скульптуры на заказ как для частных клиентов, так и для бизнес-клиентов.</p>
+					<span class="left-arrow"></span>
+				</div>
+			</div>
+			<div class="timeline-item right">
+				<img src="./img/Group8.svg" alt="">
+				<div class="timeline-item__text">
+					<p> Мы можем создать скульптуру любого размера, начиная от маленьких фигурок, и заканчивая большими монументами.</p>
+					<span class="right-arrow"></span>
+				</div>
+			</div>
+			<div class="timeline-item left">
+				<img src="./img/Group7.svg" alt="">
+				<div class="timeline-item__text">
+					<p>Мы всегда стараемся делать наши скульптуры доступными для широкого круга клиентов. Поэтому мы предоставляем различные варианты оплаты, а также доставку скульптур в любую точку мира.</p>
+					<span class="left-arrow"></span>
+				</div>
+			</div>
+			
+			
+		</div>
+	</section>
+
+
+	<!---PROJECTS-->
+	<section class="projects" id="projects">
+		<div class="section-title">Наши работы</div>
+		<div class="gallery">
+			<div class="image"><span><img src="img/photo1.png" alt=""></span></div>
+			<div class="image"><span><img src="img/photo2.png" alt=""></span></div>
+			<div class="image"><span><img src="img/photo3.png" alt=""></span></div>
+			<div class="image"><span><img src="img/photo4.png" alt=""></span></div>
+			<div class="image"><span><img src="img/photo5.png" alt=""></span></div>
+			<div class="image"><span><img src="img/photo6.png" alt=""></span></div>
+		</div>
+		<div class="preview-box">
+		<div class="details">
+			<span class="title">Image <p class="current-img"></p> of <p class="total-img"></p></span>
+			<span class="icon fas fa-times"></span>
+		</div>
+		<div class="image-box">
+			<div class="slide prev"><i class="fas fa-angle-left"></i></div>
+			<div class="slide next"><i class="fas fa-angle-right"></i></div>
+			<img src="" alt="">
+		</div>
+		</div>
+		<div class="shadow"></div>
+	</section>
+
+	<!--QUOTE-->
+	<div class="quote">
+		<div class="quote-text">„От скульптуры мы вправе требовать как минимум одного — чтоб она не шевелилась.“</div>
+		<div class="quote-author">P.S.  Сальвадор Дали</div>
+	</div>
+
+	<model-viewer class="image3d-bottom" src="scene.gltf" alt="A 3D model" shadow-intensity="1" camera-controls auto-rotate ar ></model-viewer>
+
+	<!----FORM-->
+	<div class="form" id="form">
+		<div class="form-wrapper">
+			<div class="form-title">Заказать скульптуру</div>
+			<div class="form-subtitle">С радостью создадим для вас неповторимое произведение искусства.</div>
+			<input class="form-input" type="text" placeholder="Введите ваше имя">
+			<input class="form-input" type="text" placeholder="Введите ваш телефон">
+			<a href="" class="form-input form-btn">Отправить</a>
+		</div>
+	
+	</div>
+</div>
+
+<!---FOOTER-->
+	<footer class="footer" >
+		<div class="container">
+			<div class="footer-wrapper">
+				<div class="logo">
+					<div class="logo__title">The Sculpture Studio</div>
+				</div>
+				<span>©2023</span>
+			</div>
+		</div>
+		
+		
+	</footer>
+
+<!-- 3D content -->
+<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+<script nomodulesrc="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
+</body>
+
+</html>
